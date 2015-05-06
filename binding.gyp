@@ -28,11 +28,11 @@
             ['OS=="win"', {
             }],
             ['OS=="mac"', {
-                'cflags!': [ '-fno-exceptions' ],
-                'cflags_cc!': [ '-fno-exceptions' ],
                 'cflags': ['-fPIC', "-O4", "-std=c++11", "-fexceptions"],
-                'xcode_settings': {
-                    'OTHER_CPLUSPLUSFLAGS': ["-fPIC", "-O4", "-std=c++11", "-fexceptions"]
+                "xcode_settings": {
+                    'OTHER_CPLUSPLUSFLAGS' : ['-std=c++11','-stdlib=libc++', '-fexceptions'],
+                    'OTHER_LDFLAGS': ['-stdlib=libc++'],
+                    'MACOSX_DEPLOYMENT_TARGET': '10.7'
                 },
                 'include_dirs': [
                     '$(HDF5_HOME)/include'
@@ -80,8 +80,10 @@
             }],
             ['OS=="mac"', {
                 'cflags': ['-fPIC', "-O4", "-std=c++14", "-fexceptions"],
-                'xcode_settings': {
-                    'OTHER_CPLUSPLUSFLAGS': ["-fPIC", "-O4", "-std=c++11", "-fexceptions"]
+                "xcode_settings": {
+                    'OTHER_CPLUSPLUSFLAGS' : ['-std=c++11','-stdlib=libc++', '-fexceptions'],
+                    'OTHER_LDFLAGS': ['-stdlib=libc++'],
+                    'MACOSX_DEPLOYMENT_TARGET': '10.7'
                 },
                 'include_dirs': [
                     '$(HDF5_HOME)/include'
@@ -130,8 +132,10 @@
             }],
             ['OS=="mac"', {
                 'cflags': ['-fPIC', "-O4", "-std=c++14", "-fexceptions"],
-                'xcode_settings': {
-                    'OTHER_CPLUSPLUSFLAGS': ["-fPIC", "-O4", "-std=c++11", "-fexceptions"]
+                "xcode_settings": {
+                    'OTHER_CPLUSPLUSFLAGS' : ['-std=c++11','-stdlib=libc++', '-fexceptions'],
+                    'OTHER_LDFLAGS': ['-stdlib=libc++'],
+                    'MACOSX_DEPLOYMENT_TARGET': '10.7'
                 },
                 'include_dirs': [
                     '$(HDF5_HOME)/include'
@@ -178,8 +182,10 @@
             }],
             ['OS=="mac"', {
                 'cflags': ['-fPIC', "-O4", "-std=c++14", "-fexceptions"],
-                'xcode_settings': {
-                    'OTHER_CPLUSPLUSFLAGS': ["-fPIC", "-O4", "-std=c++11", "-fexceptions"]
+                "xcode_settings": {
+                    'OTHER_CPLUSPLUSFLAGS' : ['-std=c++11','-stdlib=libc++', '-fexceptions'],
+                    'OTHER_LDFLAGS': ['-stdlib=libc++'],
+                    'MACOSX_DEPLOYMENT_TARGET': '10.7'
                 },
                 'include_dirs': [
                     '$(HDF5_HOME)/include'
@@ -228,8 +234,10 @@
             }],
             ['OS=="mac"', {
                 'cflags': ['-fPIC', "-O4", "-std=c++14", "-fexceptions"],
-                'xcode_settings': {
-                    'OTHER_CPLUSPLUSFLAGS': ["-fPIC", "-O4", "-std=c++11", "-fexceptions"]
+                "xcode_settings": {
+                    'OTHER_CPLUSPLUSFLAGS' : ['-std=c++11','-stdlib=libc++', '-fexceptions'],
+                    'OTHER_LDFLAGS': ['-stdlib=libc++'],
+                    'MACOSX_DEPLOYMENT_TARGET': '10.7'
                 },
                 'include_dirs': [
                     '$(HDF5_HOME)/include'
@@ -278,8 +286,10 @@
             }],
             ['OS=="mac"', {
                 'cflags': ['-fPIC', "-O4", "-std=c++14", "-fexceptions"],
-                'xcode_settings': {
-                    'OTHER_CPLUSPLUSFLAGS': ["-fPIC", "-O4", "-std=c++11", "-fexceptions"]
+                "xcode_settings": {
+                    'OTHER_CPLUSPLUSFLAGS' : ['-std=c++11','-stdlib=libc++', '-fexceptions'],
+                    'OTHER_LDFLAGS': ['-stdlib=libc++'],
+                    'MACOSX_DEPLOYMENT_TARGET': '10.7'
                 },
                 'include_dirs': [
                     '$(HDF5_HOME)/include'
